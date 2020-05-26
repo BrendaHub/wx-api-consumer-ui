@@ -87,6 +87,7 @@ export default {
         },
         //添加菜单
         addMenu(level) {
+            console.info(JSON.stringify(this.menu.buttons))
             if (level == 1 && this.menu.buttons.length < 3) {
                 this.menu.buttons.push({
                     "type": "view",
@@ -99,8 +100,8 @@ export default {
             if (level == 2 && this.menu.buttons[this.selectedMenuIndex].subButtons.length < 5) {
                 this.menu.buttons[this.selectedMenuIndex].subButtons.push({
                     "type": "view",
-                    "name": "子菜单名称",
-                    "url": ""
+                    "name": "子菜单名称"
+//                     "url": ""
                 })
                 this.selectSubMenu(this.menu.buttons[this.selectedMenuIndex].subButtons.length - 1)
             }
@@ -122,6 +123,7 @@ export default {
             }
         },
         updateWxMenu() {
+            console.info(JSON.stringify(this.menu))
             this.$http({
                 url: this.$http.adornUrl('/manage/wxMenu/updateMenu'),
                 data: this.menu,

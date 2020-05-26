@@ -15,7 +15,7 @@ module.exports = {
 		},
 		externals: {
 			vue: "Vue",
-			"vue-router": "Router",
+						"vue-router": "Router",
             "element-ui": "ELEMENT",
             "tinymce":"tinymce"
 		}

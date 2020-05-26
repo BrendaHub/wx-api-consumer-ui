@@ -3,8 +3,9 @@
         <div class="site-content__wrapper">
             <div class="site-content">
                 <div class="brand-info">
-                    <h2 class="brand-info__text">微信后台管理系统</h2>
-                    <p class="brand-info__intro">微信公众号后台管理系统。</p>
+                    <p class="brand-info__intro">中投摩根</p>
+                    <h2 class="brand-info__text">微信二次订制开发系统</h2>
+                    <p class="brand-info__intro">&copy 2019 - 2020 版权所有</p>
                 </div>
                 <div class="login-main">
                     <h3 class="login-title">管理员登录</h3>
